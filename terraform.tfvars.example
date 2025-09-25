@@ -1,0 +1,26 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS Configuration
+aws_region  = "us-east-1"
+environment = "demo"
+
+# Project Configuration
+project_name = "rightsize-demo"
+
+# Network Configuration
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+
+# EC2 Configuration
+instance_type      = "t3.large"  # Current instance type from Rightsize data
+root_volume_size   = 20
+
+# SSH Key - IMPORTANT: Replace with your actual public key
+public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7... your-email@example.com"
+
+# Alternative instance types for testing rightsizing recommendations:
+# instance_type = "t2.large"    # Rightsize recommendation
+# instance_type = "t3.medium"   # Smaller alternative
+# instance_type = "t3.xlarge"   # Larger alternative
+# instance_type = "m4.4xlarge"  # For Graviton migration testing
