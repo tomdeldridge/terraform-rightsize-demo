@@ -152,7 +152,7 @@ resource "aws_key_pair" "main" {
 # This represents the "current" instance type (t3.large) that has optimization recommendations
 resource "aws_instance" "main" {
   ami                    = data.aws_ami.amazon_linux.id
-  instance_type          = var.instance_type
+  instance_type          = "t2.large"
   key_name               = aws_key_pair.main.key_name
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
   subnet_id              = aws_subnet.public.id
