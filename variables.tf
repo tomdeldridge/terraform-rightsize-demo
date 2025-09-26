@@ -6,6 +6,18 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "account_id" {
+  description = "AWS Account ID"
+  type        = string
+  default     = "618300337335"
+}
+
+variable "backend_environment" {
+  description = "Environment for S3 backend naming"
+  type        = string
+  default     = "alfa"
+}
+
 variable "environment" {
   description = "Environment name"
   type        = string

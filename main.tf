@@ -1,15 +1,7 @@
 # Terraform configuration for EC2 instance matching Rightsize resource data
 # This instance represents the current state before optimization recommendations
 
-terraform {
-  required_version = ">= 1.0"
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
+# Terraform configuration moved to versions.tf
 
 # Configure the AWS Provider
 provider "aws" {
