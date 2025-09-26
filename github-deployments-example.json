@@ -1,0 +1,204 @@
+{
+  "deployments": [
+    {
+      "url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567890",
+      "id": 1234567890,
+      "node_id": "DE_kwDOABCDEF4AAAABJ2k6Mg",
+      "sha": "a1b2c3d4e5f6789012345678901234567890abcd",
+      "ref": "main",
+      "task": "deploy",
+      "payload": {
+        "environment": "alfa",
+        "terraform_workspace": "default",
+        "backend_config": "environments/alfa/backend.hcl",
+        "var_file": "environments/alfa/terraform.tfvars",
+        "instance_type": "t3.large",
+        "account_id": "618300337335"
+      },
+      "original_environment": "alfa",
+      "environment": "alfa",
+      "description": "Deploy rightsize demo infrastructure to ALFA environment",
+      "creator": {
+        "login": "tom.eldridge",
+        "id": 12345678,
+        "node_id": "MDQ6VXNlcjEyMzQ1Njc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12345678?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tom.eldridge",
+        "html_url": "https://github.com/tom.eldridge",
+        "type": "User",
+        "site_admin": false
+      },
+      "created_at": "2025-09-26T10:30:00Z",
+      "updated_at": "2025-09-26T10:35:00Z",
+      "statuses_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567890/statuses",
+      "repository_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo",
+      "transient_environment": false,
+      "production_environment": false
+    },
+    {
+      "url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567891",
+      "id": 1234567891,
+      "node_id": "DE_kwDOABCDEF4AAAABJ2k6Mz",
+      "sha": "b2c3d4e5f6789012345678901234567890abcde1",
+      "ref": "release/v1.2.0",
+      "task": "deploy",
+      "payload": {
+        "environment": "prod",
+        "terraform_workspace": "default",
+        "backend_config": "environments/prod/backend.hcl",
+        "var_file": "environments/prod/terraform.tfvars",
+        "instance_type": "t2.large",
+        "account_id": "618300337335",
+        "rightsizing_applied": true,
+        "estimated_monthly_savings": "$48.00"
+      },
+      "original_environment": "prod",
+      "environment": "prod",
+      "description": "Deploy rightsized infrastructure to PROD environment - estimated $48/month savings",
+      "creator": {
+        "login": "github-actions[bot]",
+        "id": 41898282,
+        "node_id": "MDM6Qm90NDE4OTgyODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+        "html_url": "https://github.com/apps/github-actions",
+        "type": "Bot",
+        "site_admin": false
+      },
+      "created_at": "2025-09-26T14:15:00Z",
+      "updated_at": "2025-09-26T14:22:00Z",
+      "statuses_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567891/statuses",
+      "repository_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo",
+      "transient_environment": false,
+      "production_environment": true
+    },
+    {
+      "url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567889",
+      "id": 1234567889,
+      "node_id": "DE_kwDOABCDEF4AAAABJ2k6MR",
+      "sha": "9a8b7c6d5e4f321098765432109876543210fedc",
+      "ref": "feature/cost-optimization",
+      "task": "deploy",
+      "payload": {
+        "environment": "alfa",
+        "terraform_workspace": "default",
+        "backend_config": "environments/alfa/backend.hcl",
+        "var_file": "environments/alfa/terraform.tfvars",
+        "instance_type": "t3.large",
+        "account_id": "618300337335",
+        "experimental": true,
+        "cloudwatch_monitoring": true
+      },
+      "original_environment": "alfa",
+      "environment": "alfa",
+      "description": "Testing cost optimization features with enhanced CloudWatch monitoring",
+      "creator": {
+        "login": "cloudzero-bot",
+        "id": 87654321,
+        "node_id": "MDQ6VXNlcjg3NjU0MzIx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/87654321?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cloudzero-bot",
+        "html_url": "https://github.com/cloudzero-bot",
+        "type": "User",
+        "site_admin": false
+      },
+      "created_at": "2025-09-25T16:45:00Z",
+      "updated_at": "2025-09-25T16:52:00Z",
+      "statuses_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567889/statuses",
+      "repository_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo",
+      "transient_environment": true,
+      "production_environment": false
+    }
+  ],
+  "deployment_statuses": {
+    "1234567890": [
+      {
+        "url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567890/statuses/9876543210",
+        "id": 9876543210,
+        "node_id": "DES_kwDOABCDEF4AAAACTqWfCg",
+        "state": "success",
+        "creator": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "type": "Bot"
+        },
+        "description": "Deployment completed successfully to ALFA environment",
+        "environment": "alfa",
+        "target_url": "https://github.com/cloudzero/terraform-rightsize-demo/actions/runs/6789012345",
+        "created_at": "2025-09-26T10:35:00Z",
+        "updated_at": "2025-09-26T10:35:00Z",
+        "deployment_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567890",
+        "repository_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo",
+        "environment_url": "https://alfa.rightsize-demo.cloudzero.com"
+      }
+    ],
+    "1234567891": [
+      {
+        "url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567891/statuses/9876543211",
+        "id": 9876543211,
+        "node_id": "DES_kwDOABCDEF4AAAACTqWfCx",
+        "state": "success",
+        "creator": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "type": "Bot"
+        },
+        "description": "Production deployment successful - rightsized from t3.large to t2.large, estimated savings: $48/month",
+        "environment": "prod",
+        "target_url": "https://github.com/cloudzero/terraform-rightsize-demo/actions/runs/6789012346",
+        "created_at": "2025-09-26T14:22:00Z",
+        "updated_at": "2025-09-26T14:22:00Z",
+        "deployment_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567891",
+        "repository_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo",
+        "environment_url": "https://prod.rightsize-demo.cloudzero.com"
+      }
+    ],
+    "1234567889": [
+      {
+        "url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567889/statuses/9876543209",
+        "id": 9876543209,
+        "node_id": "DES_kwDOABCDEF4AAAACTqWfCZ",
+        "state": "in_progress",
+        "creator": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "type": "Bot"
+        },
+        "description": "Terraform apply in progress for experimental cost optimization features",
+        "environment": "alfa",
+        "target_url": "https://github.com/cloudzero/terraform-rightsize-demo/actions/runs/6789012344",
+        "created_at": "2025-09-25T16:50:00Z",
+        "updated_at": "2025-09-25T16:50:00Z",
+        "deployment_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo/deployments/1234567889",
+        "repository_url": "https://api.github.com/repos/cloudzero/terraform-rightsize-demo"
+      }
+    ]
+  },
+  "metadata": {
+    "total_deployments": 3,
+    "environments": ["alfa", "prod"],
+    "last_deployment": "2025-09-26T14:15:00Z",
+    "repository": {
+      "name": "terraform-rightsize-demo",
+      "full_name": "cloudzero/terraform-rightsize-demo",
+      "owner": "cloudzero",
+      "private": false,
+      "html_url": "https://github.com/cloudzero/terraform-rightsize-demo"
+    },
+    "cost_optimization": {
+      "current_monthly_cost": "$80.00",
+      "optimized_monthly_cost": "$32.00",
+      "potential_savings": "$48.00",
+      "savings_percentage": "60%",
+      "rightsizing_recommendations": {
+        "current_instance": "t3.large",
+        "recommended_instance": "t2.large",
+        "action": "Rightsize",
+        "implementation_effort": "Low"
+      }
+    }
+  }
+}
